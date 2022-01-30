@@ -6,9 +6,8 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #e5e5e5;
   display: flex;
-  padding-top: 5rem;
+  padding-top: 2rem;
   justify-content: center;
-  overflow: hidden;
   margin: 0;
 }
 
