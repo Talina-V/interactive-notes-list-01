@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.col-list {
+  width: 600px;
+  height: 80px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 5px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  list-style: none;
+  margin-top: 3px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+}
+
+.list-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(198, 198, 198, 0.36) 0%,
+    #ffffff 100%
+  );
+}
+
+.start {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.col-list-size {
+  display: inline-flex;
+  width: 400px;
+  height: 25px;
+}
+
+span {
+  padding-left: 30px;
+}
+
+.up,
+.down {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.up:after {
+  content: "△";
+}
+.up:hover:after {
+  content: "▲";
+}
+.down:after {
+  content: "▽";
+}
+.down:hover:after {
+  content: "▼";
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.del {
+  border-radius: 5px;
+  transition: background 0.2s linear, color 0.2s linear;
+  cursor: pointer;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 11px;
+  margin: 5px;
+}
+
+.del:hover {
+  background-color: #229efd;
+  color: #fff;
+}
