@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+  
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #e5e5e5;
   display: flex;
   padding-top: 2rem;
@@ -15,7 +15,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 1rem;
 }
 
 .col-list {
@@ -28,14 +27,12 @@ body {
   list-style: none;
   margin-top: 3px;
   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  text-align: center;
 }
 
+
 .list-bg {
-  background: linear-gradient(
-    90deg,
-    rgba(198, 198, 198, 0.36) 0%,
-    #ffffff 100%
-  );
+  background: linear-gradient(90deg, rgba(198, 198, 198, 0.36) 0%, #ffffff 100%);
 }
 
 .start {
@@ -49,38 +46,30 @@ body {
 .col-list-size {
   display: inline-flex;
   width: 400px;
-  height: 25px;
+  height: 5px;
 }
 
 span {
   padding-left: 30px;
 }
 
-.up,
-.down {
-  cursor: pointer;
+.up, .down { 
+  cursor: pointer; 
   color: rgb(0, 0, 0);
-  font-weight: bold;
+  font-weight: bold;   
   font-size: 11px;
 }
 
-.up:after {
-  content: "△";
-}
-.up:hover:after {
-  content: "▲";
-}
-.down:after {
-  content: "▽";
-}
-.down:hover:after {
-  content: "▼";
-}
+.up:after         { content: '△'; }
+.up:hover:after   { content: '▲'; }
+.down:after       { content: '▽'; }
+.down:hover:after { content: '▼'; }
+
 
 .btn-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+display: flex;
+justify-content: flex-start;
+align-items: flex-end; 
 }
 
 .del {
@@ -88,12 +77,13 @@ span {
   transition: background 0.2s linear, color 0.2s linear;
   cursor: pointer;
   margin-left: 30px;
-  font-weight: bold;
+  font-weight: bold;   
   font-size: 11px;
-  margin: 5px;
+  margin-top: 5px;
+  /* margin: 5px; */
 }
 
 .del:hover {
-  background-color: #229efd;
+  background-color:#229efd;
   color: #fff;
 }

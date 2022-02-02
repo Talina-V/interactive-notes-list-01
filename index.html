@@ -6,17 +6,15 @@
     <link rel="stylesheet" href="src/styles.css" />
     <title>Cubex entry test</title>
   </head>
-
   <body>
     <div>
       <ul class="row">
         <li class="col-list start">
-          <span class="col-list-size"></span>
-          <input type="text" id="input" placeholder="Add an item" />
-          <div class="btn-container">
-            <button id="button" class="del" type="button">Add Sublist</button>
-            <button id="btn-add" class="del" type="button">Add</button>
-          </div>
+
+          <input type="text" id="input" onkeyup="success()" placeholder="Add an item" />
+            <button id="button" class="del initial" type="button" disabled>Add Sublist</button>
+            <button id="btn-add" class="del" type="button" disabled>Add</button>
+        
         </li>
 
         <div id="list"></div>
@@ -24,7 +22,6 @@
         <div id="listelement"></div>
       </ul>
     </div>
-
     <script src="src/index.js"></script>
   </body>
 </html>
